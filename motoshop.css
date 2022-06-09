@@ -1,0 +1,822 @@
+@font-face {
+    font-family: "Billy Ohio", cursive;
+    src: url("/fonts/Billy Ohio.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #ededed; */
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+  
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #000000;
+}
+
+.header {
+    width: 1700px;
+    margin: auto;
+    background-image: url(main.png);
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    color: #ffffff
+}
+
+.header::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.header-mask {
+    padding-top: 10px;
+    width: 1700px;
+    margin: auto;
+    position: relative;
+}
+
+.header-mask::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(white.png);
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    background-position: bottom left -50px;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-mask::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(red.png);
+    background-repeat: no-repeat;
+    background-position: top -10px right -50px;
+    position: absolute;
+    z-index: 20;
+}
+
+.header-wrapper {
+    width: 1580px;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.header-nav,
+.header-navigation,
+.header-menu-list,
+.navigation-links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    height: 110px;
+}
+
+.header-logo-img {
+    margin: 7px;
+}
+
+.header-menu-list {
+    margin: 0 65px;
+    width: 665px;
+}
+
+.navigation-links-list {
+    width: 260px;
+}
+
+.menu-item-link {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.navigation-link {
+    width: 46px;
+    height: 46px;
+    background-size: 46px;
+}
+
+.navigation-link-facebook {
+    background-image: url(Facebookb.png);
+}
+
+.navigation-link-google {
+    background-image: url(Googleb.png);
+}
+
+.navigation-link-vk {
+    background-image: url(vk.png);
+}
+
+.navigation-link-instagram {
+    background-image: url(INSTAGRAM.png);
+}
+
+.navigation-link-contain {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header-title {
+    font-size: 80px;
+    line-height: 1em;
+    font-family: "Billy Ohio", cursive;
+    text-align: center;
+    margin: auto;
+    width: 1200px;
+    height: 855px;
+    padding-top: 100px;
+    background-image: url(headmoto.png);
+    background-size: 880px;
+    background-repeat: no-repeat;
+    background-position: center bottom 60px;
+}
+
+.main {
+    width: 1700px;
+    margin: auto;
+    background-color: #eeeeee;
+}
+
+.tours {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour {
+    width: 365px;
+}
+
+.tour-offer {
+    width: 365px;
+    height: 365px;
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    color: #ffffff;
+}
+
+.tour-offer:after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: -20px;
+    left: -20px;
+    background-image: url(angle.png);
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    z-index: 1px;
+}
+
+.moto-one {
+    background-image: url(moto1.png);
+}
+
+.moto-two {
+    background-image: url(moto2.png);
+}
+
+.moto-three {
+    background-image: url(moto3.png);
+}
+
+.tour-price {
+    font-size: 60px;
+    line-height: 0.8em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 700;
+    padding-top: 290px;
+    position: relative;
+    z-index: 10;
+}
+
+.tour-price-ratio {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+.tour-title {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #202020;
+    font-weight: bold;
+    font-family: "Economica", sans-serif;
+    text-transform: capitalize;
+}
+
+.tour-content { 
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #676767;
+    font-weight: 500;
+    font-family: "Lato";
+}
+
+.tour-button {
+    width: 115px;
+    height: 40px;
+    background-color: #cd0a2d;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+.book-tour-button {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    padding-top: 8px;
+}
+
+.reasons-team {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.reasons-team:after {
+    content: "";
+    top: -58px;
+    right: 0;
+    bottom: -58px;
+    left: 0;
+    background-image: url(centermoto.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 770px;
+    position: absolute;
+    z-index: 1px;
+}
+
+.reasons {
+    width: 850px;
+    background-color: #cd0a2d;
+    color: #ffffff;
+}
+
+.reasons-wrapper, .team-wrapper {
+    width: 430px;
+    height: 460px;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reason-title {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+   
+}
+
+.reason-item-title {
+    font-size: 26px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: "Economica", sans-serif;
+    padding-bottom: 10px;
+    text-transform: none;
+}
+
+.reason-item-contain {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #e37689;
+    font-weight: 500;
+    font-family: "Lato";
+    padding-bottom: 50px;
+}
+
+.reason-item-contain:last-of-type {
+    padding-bottom: 0;
+}
+
+.team {
+    width: 850px;
+    background-color: #ffffff;
+    color: #5e5e5e;
+    margin-top: 65px;
+}
+
+.team-img-box {
+    font-size: 0;
+    margin-right: 35px;
+}
+
+.img-box-two {
+    margin-left: 35px;
+    margin-right: 0;
+}
+
+.team-item,
+.team-main-nfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-item-another {
+    flex-direction: row-reverse;
+}
+
+.team-img {
+    width: 125px;
+    height: 125px;
+    border: 5px solid #c5c5c5;
+    border-radius: 62px;
+}
+
+.team-name {
+    font-size: 48px;
+    color: #5e5e5e;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+}
+
+.team-position {
+    font-size: 25px;
+    color: #979797;
+    font-weight: 400;
+    font-family: "Bebas Neue";
+}
+
+.team-description-contain {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    color: #040404;
+    font-weight: 500;
+    font-family: "Lato";
+}
+
+.comment-wrapper {
+    width: 1280px;
+    margin: auto;
+}
+
+.comments-title {
+    font-size: 68px;
+    color: #cd0a2d;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comments-title-description {
+    width: 900px;   
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    color: #5d5c5c;
+    font-weight: 500;
+    font-family: "Lato";
+    text-align: center;
+    margin: auto;
+}
+
+.comment-contain, .commentator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-contain {
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.comment {
+    width: 640px;
+    background-color: #ffffff;
+    padding: 60px 75px;
+}
+
+.commentator {
+    margin-bottom: 60px;
+}
+
+.commentator-photo {
+    background-color: #000000;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-right: 10px;
+}
+
+.commentator-img {
+    font-size: 0;
+}
+
+.commentator-name {
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #212121;
+    font-family: "Bebas Neue";
+}
+
+.commentator-position {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #212121;
+    font-family: "Bebas Neue";
+}
+
+.personal-comment-contain {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    color: #212121;
+    font-style: italic;
+    font-family: "Lato";
+    padding-bottom: 30px;
+}
+
+.comment-decorate {
+    width: 640px;
+    height: 520px;
+    background-image: url(blackracer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 520px;
+}
+
+.history {
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url(map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1500px;
+    position: relative;
+}
+
+.history::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: -100px;
+    left: 0;
+    background-image: url(mainmoto.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto 680px;
+    position: absolute;
+    z-index: 1px;
+}
+
+.history-description {
+    width: 900px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.history-title {
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+}
+
+.red {
+    color: #cd0a2d;
+}
+
+.history-title-description {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    font-weight: 500;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.history-contain {
+    display: flex;
+}
+
+.history-facts {
+    padding: 110px 140px;
+}
+
+.history-facts-red {
+    background-color: rgba(205, 10, 45, 0.7);
+}
+
+.history-digits {
+    width: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.history-digits-another {
+    flex-direction: row-reverse;
+}
+
+.short-distance-value {
+    font-size: 55px;
+    line-height: 0.5;
+}
+
+.short-distance-duration {
+    font-size: 29px;
+}
+
+.long-distance-value {
+    font-size: 87px;
+    line-height: 0.5;
+}
+
+.long-distance-duration {
+    font-size: 45px;
+}
+
+.history-left-contain {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    font-weight: 500;
+    font-family: "Lato";
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.travel-blog {
+    padding-bottom: 70px;
+    padding-top: 110px
+}
+
+.blog-description {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.travel-blog-title {
+    font-size: 68px;
+    color: #1a1919;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+    padding-bottom: 35px;
+}
+
+.blog-title-description {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    color: #1a1919;
+    font-weight: 500;
+    font-family: "Lato";
+    padding-bottom: 40px;
+}
+
+.travel-blogs {
+    padding-bottom: 80px;
+}
+
+.trip {
+    background-color: #000000;
+    background-image: url(place.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1700px;
+    position: relative;
+}
+
+.trip::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1;
+}
+
+.trip::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: -70px;
+    left: 0;
+    background-image: url(geometka.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto 210px;
+    position: absolute;
+    z-index: 1;
+}
+
+.start-trip {
+    width: 900px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 180px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.trip-title {
+    color: #ffffff;
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+    padding-bottom: 20px;
+}
+
+.trip-title-description {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    font-weight: 500;
+    font-family: "Lato";
+}
+
+.footer {
+    background-color: #eeeeee;
+    width: 1700px;
+    margin: auto;
+}
+
+.footer-navigation {
+    width: 1000px;
+    padding-top: 115px;
+    padding-bottom: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navigation-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-nav-picture {
+    margin-right: 30px;
+}
+
+.nav-item-title {
+    font-size: 26px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: "Economica", sans-serif;
+    margin-bottom: 10px;
+}
+
+.nav-item-address {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #262626;
+    font-family: "Lato";
+}
+
+.footer-links-list {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+}
+
+.footer-link {
+    width: 68px;
+    height: 68px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid #262626;
+    border-radius: 34px;
+}
+
+.footer-link-facebook {
+    background-image: url(facebook.png);
+}
+
+.footer-link-google {
+    background-image: url(google.png);
+}
+
+.footer-link-vk {
+    background-image: url(vks.png);
+}
+
+.footer-link-youtube {
+    background-image: url(youtube.png);
+}
+
+.footer-link-in {
+    background-image: url(in.png);
+}
+
+.footer-link-digg {
+    background-image: url(digg.png);
+}
+
+.footer-link-hz {
+    background-image: url(hz.png);
+}
+
+.footer-link-contain {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.copyright-section {
+    background-color: #cd0a2d;
+}
+
+.copyright {
+    width: 300px;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.copyright-contain {
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: "Lato";
+}
